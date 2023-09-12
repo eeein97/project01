@@ -1,0 +1,1079 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+a { text-decoration: none; color: inherit;}
+address { font-style: normal;}
+img { vertical-align: middle;}
+h1,h2,h3,h4,h5,h6 {font-weight:  normal;}
+li { list-style: none;}
+.inner {
+    width: 1360px;
+    margin: auto;
+}
+body {
+    width: 100%;
+    margin: auto;
+    font-size: 14px;
+    line-height: 1.6;
+    background-color: black;
+    color: #fff;
+}
+
+/* 슬라이드 CSS */
+.slider {
+        width: 100%;
+        margin: 0px auto;
+      }
+.slick-arrow {
+        z-index: 10 !important;
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+        transition: background 0.5s !important;
+}
+.slick-arrow::before {
+    font-weight: 900 !important;
+    font-size: 49px !important;
+    transition: all 0.5s !important;
+}
+.slick-prev {
+    left: 10px !important;
+}
+.slick-next {
+     right: 30px !important;
+}
+
+/* 슬라이드 CSS 끝*/
+
+/* header 시작 */
+
+#head1 {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(120deg, rgba(140,82,255,1) 0%, rgba(92,225,230,1) 50%, 
+    	rgba(193,255,114,1) 100%);
+    border-image-slice: 1;
+}
+#logo1 img {
+	padding: 5px 0;
+	width: 180px;
+	height: 70px;	
+}
+#login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#login li {
+    padding: 0 10px;
+}
+#login li:hover {
+	border-bottom: 2px solid rgba(140,82,255,1);
+	color: rgba(193,255,114,1);
+}
+#head2 {
+    height: 50px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hmenu {
+    display: flex;
+}
+#hmenu li {
+    padding: 0 20px;
+    text-align: center;
+}
+#hmenu li:hover {
+	color:  rgba(140,82,255,1);
+	font-size: 16px;
+}
+
+/* 검색 박스 부분 */
+#searchbox {
+	outline: none;
+	width: 200px;
+	height: 30px;
+	padding-left: 10px;
+	font-size: 16px;
+	background: black;
+	color: #fff;
+	border: 1px solid;
+    border-image: linear-gradient(140deg, rgba(193,255,114,1) 0%, rgba(92,225,230,1) 50%, 
+    	rgba(140,82,255,1) 100%);
+    border-image-slice: 1;
+}
+
+/* header 끝 */
+
+
+/* section 시작 */
+
+/* 메인화면 */
+h2 {
+	padding: 10px 0;
+}
+section.inner > div {
+    position: relative;
+}
+#movieDivs p, #dramaDivs p, #musicDivs p {
+	padding: 10px 0;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.slick-slide slick-cloned > div {
+	z-index:1000;
+}
+a:hover p {
+	color:  rgba(193,255,114,1);
+}
+#musicDivs button {
+	padding-bottom: 115px !important;
+}
+
+/* 로그인, 회원가입 폼 공통 */
+.sectiondiv {
+	margin-top: 80px;
+	height: 500px;
+}
+#btn button {
+	border: 0;
+	outline: 0;
+    background: linear-gradient(160deg, rgba(140,82,255,0.8) 0%, rgba(92,225,230,0.8) 50%, 
+    	rgba(193,255,114,0.8) 100%);
+    color: white;
+    padding: 10px 20px;
+    margin: 0 50px;
+    font-size: 18px;
+}
+#btn button:hover {
+	color: black;
+}
+
+/* 로그인 폼 */
+#log1 h2 { 
+	font-size: 42px;
+	text-align: center; 
+	margin-top: 30px 
+}
+#log2 {
+	position: absolute;
+	width: 780px;
+    height: 500px;
+    top:50%;
+    left:65%;
+    transform: translate(-50%, -50%);
+}
+#log2 input {
+	width: 250px;
+    outline: none;
+    border: 3px solid rgba(193,255,114,1);
+    line-height: 30px;
+}
+#loginsection #btn {
+	margin: 0 auto;
+}
+
+/* 회원가입 폼 */
+#join1 h2 { 
+	font-size: 42px;
+	text-align: center; 
+	margin-top: 30px 
+}
+#join2 {
+	position: absolute;
+	width: 780px;
+    height: 500px;
+    top:50%;
+    left:65%;
+    transform: translate(-50%, -50%);
+}
+#join2 input {
+    outline: none;
+    border: 2px solid rgba(140,82,255,1);
+    line-height: 25px;
+}
+#joinsection #btn {
+	margin: 0 auto;
+}
+
+/* 회원정보 보기 */
+#me_view1 h2 {
+	font-size: 42px;
+	text-align: center; 
+	margin-top: 30px;
+}
+#me_view8 {	
+	width: 920px;
+    margin: 0 auto 20px;
+    text-align: center; 
+    font-size: 15px; 
+    padding: 10px; 
+}
+#me_view8 td { 
+	border: 1px solid #fff; 
+}
+#me_view2 {   
+   position: absolute;
+   width: 780px;
+    height: 500px;
+    top:52%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;   
+}
+#me_view2 td { 
+	border: 1px solid #fff; 
+}
+#mem_view_btn {
+	color: #fff;
+	font-size: 14px;
+	background: transparent;
+	border: 0;
+}
+
+/* 회원정보 수정 */
+#me_edit1 h2 {
+	font-size: 32px;
+	text-align: center; 
+	margin-top: 45px;
+}
+#me_edit2 {	
+	position: absolute;
+	width: 780px;
+    height: 500px;
+    top:52%;
+    left:50%;
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+#me_edit2 td { 
+	border: 1px solid #fff; 
+}
+
+/* 회원목록 */
+#me_list1 h2 {
+	font-size: 42px;
+	text-align: center; 
+	margin-top: 30px;
+}
+#me_list2 {
+	position: absolute;
+	width: 1000px;
+    height: 500px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+}
+
+#me_list2 #first_row {
+	height: 15px
+}
+#me_list2 td { 
+	border: 1px solid #fff; 
+	padding: 10px;
+}
+
+/* 비밀번호 확인 */
+#pass_ti h2 {
+	font-size: 32px;
+	text-align: center; 
+	margin-top: 45px;
+}
+#pass_form  {
+	position: absolute;
+	width: 780px;
+    height: 300px;
+    top:48%;
+    left:50%;
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+#pass_form input {
+	width: 250px;
+    outline: none;
+    border: 3px solid rgba(193,255,114,1);
+    line-height: 30px;
+    margin: 20px 0 20px 40px
+}
+#passformsection #btn {
+	margin-top: 70px;
+}
+
+/* 영화 관리 */
+#movie_up1 h2 {
+	font-size: 32px;
+	text-align: center; 
+	padding-bottom: 56px;
+}
+#movie_up2 {	
+	position: absolute;
+	width: 780px;
+    height: 400px;
+    top:52%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;   
+}
+#movie_up2 input {
+	margin: 10px 20px;
+	line-height: 20px;
+}
+
+/* 영화, 드라마, 음악 관리 공통사항 */
+#btn_row #btn {
+	padding: 30px 0;
+}
+
+/* 드라마 관리 */
+#drama_up1 h2 {
+	font-size: 32px;
+	text-align: center; 
+	margin-top: 46px;
+}
+#drama_up2 {	
+	position: absolute;
+	width: 780px;
+    height: 400px;
+    top:52%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;   
+}
+#drama_up2 input {
+	margin: 10px 20px;
+	line-height: 20px;
+}
+
+/* 음악 관리 */
+#music_up1 h2 {
+	font-size: 32px;
+	text-align: center; 
+	margin-top: 46px;
+}
+#music_up2 {	
+	position: absolute;
+	width: 780px;
+    height: 400px;
+    top:52%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;   
+}
+#music_up2 input {
+	margin: 10px 20px;
+	line-height: 20px;
+}
+
+/* 영화 검색, 드라마 검색, 음악 검색 공통 사항 */
+.sectiondiv2 {
+	margin-top: 15px;
+	min-height: 490px;
+}
+
+/* 영화 검색 */
+#movie_se1 h2 {
+	font-size: 32px; 
+	text-align: center; 
+	margin: 20px 0;
+}
+#moviesearchsection {
+	text-align: center;
+	padding: 20px 10px;
+}
+#movie_se2 {
+	background: black;
+	outline: none;
+	height: 30px;
+	padding: 0 10px;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #fff;
+}
+#mo_input1 {
+	margin: 0 40px;
+	line-height: 30px;
+	width: 250px;
+}
+#mo_input2 {
+	border: 0;
+	outline: 0;
+    background: linear-gradient(160deg, rgba(140,82,255,0.8) 0%, rgba(92,225,230,0.8) 50%, 
+    	rgba(193,255,114,0.8) 100%);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+#mo_input2:hover {
+	color: black;
+}
+#movie_se3 h2 {
+	font-size: 20px;
+	width: 150px;  
+	border: 1px solid #fff;
+	padding: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#movie_se4 {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#movie_se4 td {
+	padding: 10px;
+}
+#movie_se4img {
+	width: 150px;
+}
+
+/* 드라마 검색 */
+#drama_se1 h2 {
+	font-size: 32px; 
+	text-align: center; 
+	margin: 20px 0;
+}
+#dramasearchsection {
+	text-align: center;
+	padding: 20px 10px;
+}
+#drama_se2 {
+	background: black;
+	outline: none;
+	height: 30px;
+	padding: 0 10px;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #fff;
+}
+#dr_input1 {
+	margin: 0 40px;
+	line-height: 30px;
+	width: 250px;
+}
+#dr_input2 {
+	border: 0;
+	outline: 0;
+    background: linear-gradient(160deg, rgba(140,82,255,0.8) 0%, rgba(92,225,230,0.8) 50%, 
+    	rgba(193,255,114,0.8) 100%);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+#dr_input2:hover {
+	color: black;
+}
+#drama_se3 h2 {
+	font-size: 20px;
+	width: 150px;  
+	border: 1px solid #fff;
+	padding: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#drama_se4 {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#drama_se4 td {
+	padding: 10px;
+}
+#drama_se4img {
+	width: 150px;
+}
+
+/* 음악 검색 */
+#music_se1 h2 {
+	font-size: 32px; 
+	text-align: center; 
+	margin: 20px 0;
+}
+#musicsearchsection {
+	text-align: center;
+	padding: 20px 10px;
+}
+#music_se2 {
+	background: black;
+	outline: none;
+	height: 30px;
+	padding: 0 10px;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #fff;
+}
+#mu_input1 {
+	margin: 0 40px;
+	line-height: 30px;
+	width: 250px;
+}
+#mu_input2 {
+	border: 0;
+	outline: 0;
+    background: linear-gradient(160deg, rgba(140,82,255,0.8) 0%, rgba(92,225,230,0.8) 50%, 
+    	rgba(193,255,114,0.8) 100%);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+#mu_input2:hover {
+	color: black;
+}
+#music_se3 h2 {
+	font-size: 20px;
+	width: 150px;  
+	border: 1px solid #fff;
+	padding: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#music_se4 {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#music_se4 td {
+	padding: 10px;
+}
+
+/* 상단 영화, 드라마, 음악 링크 공통 사항 */
+#hddetail #btn button {
+	margin: 0 10px !important;
+	font-size: 15px !important;
+	padding: 10px 15px !important;
+}
+
+/* 상단 영화, 드라마, 음악 링크 */
+#hdmovietable {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+#hdmovietable td {
+	padding: 10px;
+}
+#hdmovieimg {
+	width: 150px;
+}
+
+/* 영화, 음악 정보 페이지(상세페이지) */
+#title_h2 h2 {
+	font-size: 30px;
+	font-weight: bolder;
+	padding-left: 10px;
+}
+#detail_div {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+#detail_ul {
+	display: flex;
+}
+#detail_ul li {
+	font-size: 15px;
+	border-right: 2px solid gray;
+	padding: 0 10px;
+}
+#detail_ul li:last-child { 
+	border: none; 
+}
+
+#movie_info p {
+	font-size: 18px;
+	padding: 5px 10px 10px 10px;
+}
+#movie_info p:last-child {
+	margin-bottom: 40px
+}
+#movie_info span { 
+	border-left: 1px solid #fff; 
+	padding: 0 10px;
+	margin-left: 5px;
+}
+
+#movie_info {
+	margin-bottom: 20px;
+	border-bottom: 3px solid #fff;
+} 
+
+/* 음악 정보 페이지 (세부페이지) */
+
+#detail_ul_mu {
+	display: flex;
+}
+#detail_ul_mu li {
+	font-size: 20px;
+	border-right: 2px solid gray;
+	padding: 0 10px;
+}
+#detail_ul_mu li:last-child { 
+	border: none; 
+}
+
+#music_info p {
+	font-size: 22px;
+	padding: 5px 10px 10px 10px;
+}
+
+#music_info p:first-child span { 
+	border-left: 1px solid #fff;
+	padding: 0 10px;
+	margin-left: 5px;
+	font-size: 25px;
+	font-weight: bold;
+	
+}
+
+#music_info p:last-child span { 
+	padding: 10px;
+	font-size: 15px;
+}
+
+#music_info p:last-child {
+	margin-bottom: 40px;
+	display: flex;
+    flex-direction: column;
+}
+
+#music_info {
+	margin-bottom: 20px;
+	border-bottom: 3px solid #fff;
+} 
+
+/* 상세페이지 내에 리뷰 부분 */
+#reviewbox1_h2 h2 { 
+	padding-left: 10px; 
+}
+#reviewbox1 {
+	margin: 10px;
+	padding: 20px;
+	border: 1px solid rgba(92,225,230,0.8);
+	position: relative;
+	width: 100%;
+}
+#reviewbox1 td {
+	padding-bottom: 10px;
+}
+#reviewbox1 tr:first-child td {
+	font-size: 17px;
+}
+#reviewbox1 tr:nth-child(2) textarea {
+	width: 100%;
+	line-height: 30px;
+	padding: 5px;
+	font-size: 15px;
+}
+
+#review_btn1 {
+	border: 3px solid rgba(92,225,230,0.8);
+	background: black;
+	color: #fff;
+	outline: 0;
+	padding: 10px 10px;	
+	position: absolute;
+	right: 40px;
+	bottom: 63px;	
+}
+#review_btn2 {
+	border: 2px solid #fff;
+	background: black;
+	color: #fff;
+	outline: 0;
+	padding: 5px;
+	
+}
+#reviewbox2 {
+	width: 100%;
+	margin: 20px 10px;
+	padding: 20px 10px;
+	font-size: 18px;
+}
+#reviewbox2 table { 
+	width: 100%; 
+}
+#reviewbox2 tr { 
+	width: 100%; 
+}
+#reviewbox2 tr td {
+	padding: 10px;
+}
+#reviewbox2 tr td:nth-child(1) {
+	width: 13%
+}
+#reviewbox2 tr td:nth-child(2) {
+	width: 70%
+}
+#reviewbox2 tr td:nth-child(3) {
+	width: 15%
+}
+#reviewbox2 tr td:nth-child(4) {
+	width: 2%;
+}
+#reviewbox3 {
+	width: 100%;
+	margin: 20px 10px;
+	padding: 20px 10px;
+	font-size: 18px;
+}
+#reviewbox3_h3 { 
+	margin: 60px 0 0 450px;
+}
+#reviewbox3_h3 h3 {
+	padding: 10px;
+	font-weight: bolder;
+	font-size: 24px;
+	border: 1px solid #fff;
+	width: 440px;
+	text-align: center;
+}
+#reviewbox3 table { 
+	width: 100%; 
+}
+#reviewbox3 tr { 
+	width: 100%; 
+}
+#reviewbox3 tr td {
+	padding: 10px;
+}
+#reviewbox3 tr td:nth-child(1) {
+	width: 13%
+}
+#reviewbox3 tr td:nth-child(2) {
+	width: 70%
+}
+#reviewbox3 tr td:nth-child(3) {
+	width: 15%
+}
+#reviewbox3 tr td:nth-child(4) {
+	width: 2%;
+}
+
+.buy_btn {
+	border:0;
+	outline:0;
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 60px;  
+    
+    background: black;
+    font-weight: bold;
+}
+
+.buy_btn:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.buy_btn:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+.buy_btn:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.buy_btn span{
+    position: absolute;
+    display: block;
+}
+.buy_btn span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+.buy_btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+.buy_btn span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+.buy_btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+/* 드라마 정보 페이지(상세페이지) */
+#title_h2 {
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#title_h2 p { 
+	margin-left: 10px;
+	font-size: 25px; 
+}
+
+#drama_info {
+	padding: 5px 10px 10px 10px;
+	margin-bottom: 20px;
+	border-bottom: 3px solid #fff;
+}
+#drama_info p {
+	margin-bottom: 40px
+}
+#drama_info span { 
+	padding: 0 10px;
+	font-size: 16px;
+}
+
+#episodebox1 {
+	margin: 10px;
+    padding: 20px;
+}
+
+#episodebox2 {
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #fff;
+	margin-bottom: 20px;
+}
+
+#episodebox2 div:nth-child(1) {
+	width: 15%;
+	margin-left: 30px;
+}
+
+#episodebox2 div:nth-child(2) {
+	width: 25%;
+	text-align: center;
+}
+
+#episodebox2 div:nth-child(3) {
+	width: 60%;
+	text-align: center;
+}
+
+#episodebox2 a {
+	display: flex;
+	align-items: center;
+}
+
+#episodebox2 img {
+	width: 150px;
+}
+
+/* 구매 페이지(공통) */
+#ph_h2 {
+	text-align: center;
+	margin-bottom : 10px;
+	padding-bottom: 30px;
+	width: 100%;
+	border-bottom: 3px solid #fff;
+	font-size: 30px;
+}
+#purchase_box {
+	margin: 60px auto;
+	display: flex;
+	text-align: center;
+	width: 80%
+}
+#ph_view {
+	width: 100%;
+	text-align: left;
+}
+#ph_view h3 {
+	margin-top: 5%;
+	padding: 0 70px;
+}
+#ph_view ul:nth-child(1) {
+	margin-top: 7%;
+	padding: 5px 60px;
+	font-size: 18px;
+	display: flex;
+}
+#ph_view ul:nth-child(2) {
+	padding: 15px 60px;
+	font-size: 18px;
+	display: flex;
+}
+#ph_view ul:nth-child(4) {
+	margin: 15px 0 0 60px;
+	color: gray;
+}
+#ph_view ul li {
+	padding: 0 10px;
+}
+#ph_view ul:nth-child(1) li:nth-child(1) {
+	border-right: 2px solid #fff;
+	width: 80px;
+}
+#ph_view ul:nth-child(1) li:nth-child(2) {
+	padding-left: 30px;
+}
+#ph_view ul:nth-child(2) li:nth-child(1) {
+	border-right: 2px solid #fff;
+	width: 80px;
+}
+#ph_view ul:nth-child(2) li:nth-child(2) {
+	padding-left: 30px;
+}
+#ph_view ul:nth-child(4) span {
+	font-weight: bold;
+	color: #eee;
+}
+#ph_sale {
+	padding: 20px 0;
+	margin: 30px 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+#ph_sale p { 
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+#purchase_from button {
+	border: 0;
+	outline: 0;
+    background: linear-gradient(160deg, rgba(140,82,255,0.8) 0%, rgba(92,225,230,0.8) 50%, 
+    	rgba(193,255,114,0.8) 100%);
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 17px;
+}
+
+#purchase_from button:hover {
+	color: black;
+}
+
+/* 음악 구매페이지만 추가*/
+#ph_musicfile {
+	margin-top: 125px;
+    padding-right: 30px;
+}
+
+/* 구매목록 */
+#purchaseh2 {
+	font-size: 28px;
+	text-align: center; 
+	margin-top: 30px;
+}
+
+#purchasetable {	
+	width: 780px;
+	margin: 0 auto 20px;
+	text-align: center;
+	font-size: 18px;
+}
+
+#purchasetable tr:nth-child(1) {
+	height: 12%;
+}
+
+#purchasetable tr:nth-child(2) {
+	height: 73%;
+}
+
+#purchasetable tr:nth-child(3) {
+	height: 15%;
+}
+
+#purchasetable td {
+	padding: 10px;
+	border: 1px solid #fff; 
+}
+
+/* section 끝 */
+
+/* footer 시작 */
+#footerdiv {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    border-top: 3px solid;
+    border-image: linear-gradient(120deg, rgba(140,82,255,1) 0%, rgba(92,225,230,1) 50%, 
+    	rgba(193,255,114,1) 100%);
+    border-image-slice: 1;
+    padding: 10px;
+}
+
+#footerdiv span { font-size: 17px }
+
+#logo2 img {
+	padding: 5px 0;
+	margin-top: 10px;
+	width: 180px;
+	height: 80px;
+}
